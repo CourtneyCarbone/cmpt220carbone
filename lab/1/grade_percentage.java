@@ -26,8 +26,12 @@ public class grade_percentage {
     double projects = input.nextDouble();
     System.out.print("homework and labs: ");
     double hw = input.nextDouble();
-    System.out.println("Your final grade is: " + (midtermexam * 0.2 
-    + finalexam * 0.2  + projects * 0.2 + hw * 0.4)+"%"); 
+    System.out.print("Your final grade is: "(midtermexam * 0.2 
+    + finalexam * 0.2  + projects 
+    * 0.2 + hw * 0.4)+"%"); 
+
+
+
   }
 
 }
