@@ -1,0 +1,14 @@
+10 pts
+
+Courtney,
+
+- Congratulations on passing the judge Kattis!
+
+
+However, 
+
+- Please do not leave an additional line between lines in the header comments.
+
+Peace,
+
+- Dr. Rivas
