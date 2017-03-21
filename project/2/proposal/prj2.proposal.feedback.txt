@@ -1,0 +1,12 @@
+10 pts
+
+Courtney,
+
+The project idea seems interesting; however: 
+  - it seems to me that this is too hard to do within a semester; I suggest you
+    focus in one part of the whole database system and do that. Once you have
+    that done go ahead and do the rest if you have time.
+
+Peace,
+
+- Dr. Rivas
