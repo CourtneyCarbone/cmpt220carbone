@@ -11,6 +11,24 @@
    */
 /**
   * Problem_10_17
-  * This class counts the number of letters
-  * in a string.
+  * This class squares numbers.
   */
+import java.math.BigDecimal;
+
+public class Problem_10_17 {
+  public static void main(String[] args) {
+    BigDecimal longMaxValue = new BigDecimal(Long.MAX_VALUE);
+    long start = (long) Math.sqrt(Long.MAX_VALUE);
+    BigDecimal b = new BigDecimal(start);
+    int count = 0;
+
+    while(count<10) {
+      BigDecimal squared = b.multiply(b);
+      if(squared.compareTo(longMaxValue) > 0) {
+        count++;
+        System.out.println(count + ": " + b + " squared = " + squared);
+      }
+      b = b.add(BigDecimal.ONE);
+    }
+  }
+}
