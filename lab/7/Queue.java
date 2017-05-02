@@ -16,29 +16,25 @@
 class Queue {
 	private int[] elements;
 	private int size;
-	private int capacity;
+	public static int capacity = 8;
 
-	public Queue(int capactiy) {
-	  this.capacity = capacity;
-	  elements = new int [capacity];
-	}
-	public Queue() {
-	  this(8);
+	Queue() {
+	  elements = new int[capacity];
 	}
 	public void enqueue(int v) {
 	  if(size >= elements.length) {
-	    int[] temp = new int[size*2];
-	    System.arraycopy(elements, 0, temp, 0, size);
+	    int[] temp = new int[elements.length*2];
+	    System.arraycopy(elements, 0, temp, 0, elements.length);
 	    elements = temp;
 	  }
 	  elements[size++] = v;
 	}
 	public int dequeue(){
 		int v = elements[0];
+		int[] temp = new int[elements.length];
+		System.arraycopy(elements, 1 , temp, 0, size);
+		elements = temp;
 		size--;
-		for(int i=0; i < size; i++) {
-			elements[i] = elements[i+1];
-		}
 		return v;
 	}
 	public boolean empty() {
@@ -46,8 +42,5 @@ class Queue {
 	}
 	public int getSize() {
 		return size;
-	}
-	public int getCapacity() {
-		return capacity;
 	}
 }
