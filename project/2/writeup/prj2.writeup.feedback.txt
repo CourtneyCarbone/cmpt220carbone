@@ -1,0 +1,15 @@
+39 pts
+
+The project is a database project. The idea has good merit. 
+
+However, there are some issues...
+Writeup:
+- It does not follow the structure required. Abstract, Introduction, etc. -1pt
+
+Code:
+- There is incorrect indentation. -1pt
+
+- You submitted a zip file and no java files.
+
+Overall:
+- Decent work above average of an SD1 student. 
